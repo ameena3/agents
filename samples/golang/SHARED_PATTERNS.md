@@ -9,7 +9,7 @@ This document is the canonical reference for all Go sample implementations in th
 All `go.mod` files must use:
 
 ```
-go 1.26
+go 1.24
 ```
 
 ---
@@ -210,7 +210,7 @@ func (a *AgentApp) handleMessages(w http.ResponseWriter, r *http.Request) {
 ```
 module github.com/microsoft/agents-for-go/samples/<SAMPLE-NAME>
 
-go 1.26
+go 1.24
 
 require (
     github.com/joho/godotenv v1.5.1

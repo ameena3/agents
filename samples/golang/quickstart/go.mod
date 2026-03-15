@@ -1,5 +1,5 @@
 module github.com/microsoft/agents-for-go/samples/quickstart
 
-go 1.26
+go 1.24
 
 require github.com/joho/godotenv v1.5.1
