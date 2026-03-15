@@ -270,3 +270,5 @@ The canonical reference implementation is in `samples/golang/quickstart/`. All o
 ## Agent Decisions Log
 
 - Agent 0 (Foundation): Established all core types, AgentApp pattern, and quickstart reference implementation.
+- Agent 2 (cards): AdaptiveCard body uses map[string]interface{}. Card content types follow Bot Framework spec. CardFactory functions return Attachment.
+- Agent 4 (azureai-streaming): Azure OpenAI called via net/http REST (no SDK dep). Streaming implemented as collect-then-send due to Bot Framework protocol constraints. SSE parsing done manually on response body.
