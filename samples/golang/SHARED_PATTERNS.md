@@ -273,3 +273,4 @@ The canonical reference implementation is in `samples/golang/quickstart/`. All o
 - Agent 2 (cards): AdaptiveCard body uses map[string]interface{}. Card content types follow Bot Framework spec. CardFactory functions return Attachment.
 - Agent 4 (azureai-streaming): Azure OpenAI called via net/http REST (no SDK dep). Streaming implemented as collect-then-send due to Bot Framework protocol constraints. SSE parsing done manually on response body.
 - Agent 5 (copilotstudio-client, copilotstudio-skill): Client uses Direct Line REST API with polling (no WebSocket). Skill uses standard AgentApp with added OnInvoke handler. Token management is simplified - production use requires proper MSAL integration.
+- Agent 3 (auto-signin, obo-authorization): OAuth tokens stored in sync.Map keyed by conversation ID. OAuthCard uses contentType "application/vnd.microsoft.card.oauth". MSAL Go library used for OBO flow; stub used if network unavailable during build.
