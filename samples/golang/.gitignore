@@ -1,0 +1,8 @@
+# Compiled binaries (match only files, not directories)
+quickstart/quickstart
+cards/cards
+auto-signin/auto-signin
+obo-authorization/obo-authorization
+azureai-streaming/azureai-streaming
+copilotstudio-client/copilotstudio-client
+copilotstudio-skill/copilotstudio-skill
